@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
+
+.dark-theme {
+  --background-color: #003049;
+  --background-color: #23043f;
+  --login-background: #669bbc;
+  --controls-background: #030303;
+  --controls-background-selected: #383838;
+  --controls-color: white;
+  /* --background-url: url("../../../src/images/MarketplaceImage.jpg"); */
+}
+
+.light-theme {
+  --background-color: #669bbc;
+  /* --text-color: rgb(33, 33, 33); */
+  --login-background: #003049;
+  --controls-background: white;
+  --controls-background-selected: rgb(231, 229, 229);
+  --controls-color: black;
+}
+
+.background {
+  padding: 80px 2rem 40px 2rem;
+  
+  background-color: var(--background-color);
+  color: white;
+  min-height: 100svh;
+  display: flex;
+  /* align-items: center; */
+  transition: 0.3s all ease-in;
+  
+  font-family: "inter", sans-serif;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  /* min-height: 100%; */
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin: 0;
+  margin-top: 2rem;
+  text-transform: capitalize;
+  font-size: 5rem;
+  letter-spacing: 0.15rem;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.top {
+  text-align: center;
+}
+
+.line {
+  width: 10rem;
+  margin-top: 1rem;
+
+  height: 1px;
+  background-color: white;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.banner h3 {
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.selection {
+  display: flex;
+  font-family: "inter", sans-serif;
+}
+
+.colours,
+.backgrounds {
+  background-color: var(--controls-background);
+  width: 50%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: var(--controls-color);
+}
+
+
+.selected {
+  background-color: var(--controls-background-selected);
+}
+
+.login-prompt {
+  margin-bottom: 2rem;
+  text-align: center;
+
+  font-size: 2rem;
+}
+
+.login {
+  background-color: var(--login-background);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 60px);
+  grid-template-rows: repeat(3, 60px);
+  gap: 15px;
+  justify-content: center;
+
+}
+
+.yes {
+  width: 100%;
+}
+
+@media (max-width: 790px) {
+  .title {
+    font-size: 4rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .line {
+    max-width: 10rem;
+  }
+
+  .banner h3 {
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .colours,
+  .backgrounds {
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .login-prompt, .subtitle {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .login {
+    font-size: 1.5rem;
+  }
+
+  .grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 680px) {
+  .title {
+    font-size: 3.5rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .line {
+    width: 6rem;
+  }
+
+  .banner {
+    gap: 0.9rem;
+  }
+
+  .banner h3 {
+    font-size: 1.2rem;
+    white-space: nowrap;
+
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 3.5rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .line {
+    width: 3rem;
+  }
+
+  .login-prompt, .subtitle {
+    font-size: 1.2rem;
+    margin-top: 5rem;
+  }
+
+  .login {
+    font-size: 1.2rem;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .selection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+    ;
+  }
+
+  .colours,
+  .backgrounds {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .colours {
+    margin-top: 3rem;
+  }
+
+  .banner {
+    gap: 0.9rem;
+  }
+
+  .banner h3 {
+    font-size: 1.2rem;
+    white-space: nowrap;
+
+  }
+
+  .grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(8, 60px);
+    gap: 15px;
+  }
+}

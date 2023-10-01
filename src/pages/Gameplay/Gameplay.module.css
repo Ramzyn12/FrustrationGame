@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+
+
+.dark-theme {
+  --background-color: #003049;
+  --background-color: #23043f;
+
+  --title-color: white;
+  /* --background-grad: linear-gradient(#130c61, #460475, #351ba9, #43a9d4); */
+}
+
+.light-theme {
+  --background-color: #669bbc;
+  --title-color: black;
+}
+
+.background {
+  padding-top: 80px;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--background-color);
+}
+
+.container {
+  background-color: purple;
+  background-position: center;
+  background-size: cover;
+  /* filter: invert(1); */
+  width: 32%;
+  min-width: 420px;
+  min-height: 70%;
+  max-width: 100%;  /* Allow the container to scale up to 100% */
+  max-height: 100%;
+  /* max-width: 440px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+  border-radius: 1.5rem;
+  position: relative;  
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'inter';
+}
+
+.target {
+  font-size: 3rem;
+  text-align: center;
+  user-select: none;
+}
+
+.current {
+  font-size: 3rem;
+  border: 1px solid black;
+  border-radius: 2rem;
+  margin-top: 0.8rem;
+  width: 8rem;
+  background-color: white;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  font-family: 'inter';
+}
+
+.highscore {
+  background-color: rgb(175, 21, 21);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  /* color: rgb(66, 66, 66); */
+}
+
+.starIcon {
+  margin-right: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.score {
+  display: flex;
+  align-items:baseline;
+  justify-content: center;
+}
+
+.modeIcon {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    min-width: 300px;
+
+  }
+
+
+  .background {
+    padding-top: 70px;
+  }
+
+}

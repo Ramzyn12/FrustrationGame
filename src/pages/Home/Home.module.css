@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap");
+/* <a href="https://www.freepik.com/free-vector/gradient-galaxy-background_14852255.htm#query=3d%20space%20background&position=10&from_view=keyword&track=ais">Image by pikisuperstar</a> on Freepik */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+/* ["264653","2a9d8f","e9c46a","f4a261","e76f51"] */
+
+.dark-theme {
+  --background-colour: #003049;
+  --background-colour: #23043f;
+  --text-color: #edf2f4;
+  --title-color: white;
+  --button-background: #669bbc;
+}
+
+.light-theme {
+  --background-colour: #669bbc;
+  --text-color: white;
+  --title-color: white;
+  --button-background: #003049;
+  /* --button-background: #23043f; */
+
+}
+
+.background {
+  background-color: var(--background-colour);
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s all ease-in;
+  padding: 3rem 5rem;
+}
+
+.container {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  /* align-self: flex-start; */
+  padding-top: 70px;
+}
+
+.titleName {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 2rem;
+
+  color: var(--title-color);
+
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.title {
+  margin: 0;
+  margin-top: 2rem;
+  text-transform: capitalize;
+  font-size: 6rem;
+  color: var(--title-color);
+  line-height: 6rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.writing {
+  margin: 0;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: var(--title-color);
+  font-family: "Inter", sans-serif;
+}
+
+.controls {
+  display: flex;
+  width: 90%;
+  gap: 2rem;
+  margin-top: 3rem;
+  font-family: "Inter", sans-serif;
+  align-items: stretch;
+}
+
+.controls .how-to-play-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 40%; */
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  background-color: var(--button-background);
+  letter-spacing: 1px;
+  white-space: nowrap;
+
+}
+
+/* .controls .how-to-play-button.light-theme {
+  background-color: #fab573;
+} */
+
+.controls .play-link {
+  /* width: 40%; */
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+  letter-spacing: 1px;
+  background-color: var(--button-background);
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+.controls .play-link:hover,
+.controls button:hover {
+  transform: scale(1.1);
+}
+
+.rules {
+  width: 60%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  background-color: var(--button-background);
+}
+
+.frusImage {
+  width: 40%;
+  align-self: flex-end;
+}
+
+
+@media (max-width: 1280px) {
+  .frusImage {
+    width: 50%;
+    align-self: flex-end;
+  }
+
+  .background {
+    
+    gap: 2rem;
+  }
+}
+
+
+@media (max-width: 1180px) {
+
+  .background {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .writing {
+    font-size: 1.3rem;
+  }
+ 
+}
+
+@media (max-width: 950px) {
+  .frusImage {
+    display: none;
+  }
+  
+  .title {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .container {
+    width: 100%;
+    align-self: center;
+  }
+
+  .background {    
+    gap: 2rem;
+  }
+
+
+
+  .writing {
+    font-size: 1.3rem;
+  }
+ 
+}
+
+@media (max-width: 800px) {
+
+
+  .background {
+    padding: 3rem 3rem;
+  }
+}
+
+
+@media (max-width: 630px) {
+  .title {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .container {
+    padding-top: 0;
+  }
+
+  .controls {
+    width: 100%;
+  }
+
+  .controls .play-link {
+    width: 100%;
+  }
+
+  .writing {
+    display: none;
+  }
+
+  .rules {
+    width: 100%;
+  }
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .background {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}

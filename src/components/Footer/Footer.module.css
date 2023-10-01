@@ -1,0 +1,54 @@
+.dark-theme {
+  --background-color: black;
+  --text-color: white;
+}
+
+.light-theme {
+  --background-color: white;
+  --text-color: black;
+
+}
+
+
+.footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.413);
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.left a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.link {
+  cursor: pointer;
+}

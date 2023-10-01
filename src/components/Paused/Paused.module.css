@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@300;400&family=VT323&display=swap");
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 7, 7, 0.797);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1.5rem;
+}
+
+.overlay h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-family: "Handjet", cursive;
+  /* font-family: "VT323", monospace; */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+  align-items: center;
+}
+
+.controls button {
+  width: 60%;
+  padding: 1rem 0.6rem;
+  border-radius: 5rem;
+  
+  font-size: 1.8rem;
+  font-family: "VT323", monospace;
+  cursor: pointer;
+  border: none;
+  /* box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.342); */
+  transition: 0.3s all ease-in-out;
+}
+
+.controls button:hover {
+  scale: 1.1;
+}
+
+.controls button:nth-child(1) {
+  background-color: rgb(145, 8, 8);
+  color: white;
+}
+
+.controls button:nth-child(2) {
+  background-color: rgb(37, 98, 13);
+  color: white;
+}
+
+.controls button:nth-child(3) {
+  background-color: rgb(23, 82, 146);
+  color: white;
+}
+
+@media screen and (max-width: 550px) {
+  .overlay {
+    border-radius: 0rem;
+  }
+
+}

@@ -1,0 +1,226 @@
+.dark-theme {
+  --background-colour-left: #003049;
+  --background-colour-left: #23043f;
+
+  --background-colour-right: #669bbc;
+  --background-colour-right: #23043f;
+
+
+  --text-color: #669bbc;
+  --input-background: rgb(70, 69, 69);
+  --invalid-color: red;
+  --invalid-bg-color: rgba(255, 0, 0, 0.273);
+  --background-url: url("../../../src/images/LoginImage.jpg");
+}
+
+.light-theme {
+  --background-colour-left: #669bbc;
+  --background-colour-right: #003049;
+  --background-colour-right: #669bbc;
+  --text-color: #003049; 
+  --input-background: white;
+  --invalid-color: red;
+  --invalid-bg-color: rgba(255, 0, 0, 0.273);
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--background-colour-left);
+  padding: 1.2rem 5rem;
+  justify-content: space-between;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 4rem;
+  padding-top: 70px;
+  /* text-align: center; */
+  letter-spacing: 0.13rem;
+  margin-bottom: 2.5rem;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.subtitle {
+  color: rgb(220, 220, 220);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'inter';
+}
+
+.controls {
+  display: flex;
+  font-family: 'inter';
+  flex-direction: column;
+}
+
+.controls label {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.controls input {
+  width: 100%;
+  height: 3rem;
+
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+.controls p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.form button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 50%;
+  border: none;
+  background-color: orange;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.form button:hover {
+  width: 100%;
+}
+
+.form input {
+  background-color: var(--input-background); 
+  background-color: white;
+  color: black;
+  /* color: black;
+  background-color: rgb(226, 226, 226); */
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--background-colour-left);
+}
+
+.left-container {
+  width: 100%;
+
+  /* padding: 0 2rem; */
+}
+
+.right {
+  /* background: linear-gradient(to right, rgb(0, 0, 0), transparent), var(--background-url); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+  background-color: var(--background-colour-right);
+  width: 50%;
+
+}
+
+
+.right img {
+  /* background: linear-gradient(to right, rgb(0, 0, 0), transparent), var(--background-url); */
+  width: 90%;
+}
+
+
+.container p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.dark-theme .invalid,
+.light-theme .invalid {
+  border: 1px solid red;
+  background-color: #c1121f;
+}
+
+.dark-theme .form input.invalid {
+  color: white;
+}
+
+.dark-theme .invalid-message,
+.light-theme .invalid-message {
+  color: var(--invalid-color);
+}
+
+
+@media screen and (max-width: 920px) {
+  .right {
+    display: none;
+  }
+
+
+  .left {
+    width: 100%;
+  }
+
+  .left h1 {
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .container {
+    padding: 1.2rem 3rem;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .container h1 {
+    font-size: 3rem;
+  }
+
+  .controls label {
+    font-size: 1.5rem;
+  
+  }
+
+  .form button {
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    width: 40%;
+    white-space: nowrap;
+
+  }
+
+  .container p {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .container {
+    padding: 1.2rem 2rem;
+  }
+
+  .form button {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 40%;
+    white-space: nowrap;
+
+  }
+}
